@@ -1,0 +1,35 @@
+@media (max-width: 425px) {
+  body {
+    flex-direction: column;
+  }
+
+  .header-container {
+    width: 100vw;
+    height: 8rem;
+    background-color: inherit;
+    border-radius: none;
+  }
+
+  .container__input {
+    width: 100%;
+  }
+
+  .input__textbox,
+  .input__submit {
+    margin: 0;
+  }
+
+  .list-wrapper {
+    width: 100vw;
+    height: calc(100vh - 8rem);
+  }
+
+  .to-do-list {
+    width: 90vw;
+  }
+
+  .task-text {
+    width: 65vw;
+    font-size: 1.1rem;
+  }
+}

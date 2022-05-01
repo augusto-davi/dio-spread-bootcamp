@@ -1,0 +1,120 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: calc(100vh - 8rem);
+  background-color: #ddd;
+  border-radius: 1rem;
+}
+
+.container__title {
+  font-weight: 700;
+  margin: 1rem 0;
+  color: rgb(19, 128, 211);
+}
+
+.container__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  height: 3rem;
+}
+
+.input__textbox {
+  border: none;
+  border-bottom: 2px solid #000;
+  width: 12rem;
+  height: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.input__textbox::placeholder {
+  color: #000;
+}
+
+.input__submit {
+  background-color: #1380d3;
+  border-style: none;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  box-shadow: 0px 5px 0px 0px rgb(37, 92, 134);
+}
+
+.input__submit:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.input__textbox,
+.input__submit {
+  margin: 0 1rem;
+}
+
+.list-wrapper {
+  width: 45vw;
+  height: calc(100vh - 8rem);
+  overflow-y: scroll;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 40vw;
+  padding: 0;
+}
+
+.task-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  word-wrap: break-word;
+  background-color: #fa4;
+  border-radius: 0.3rem;
+}
+
+.checkbox:checked + .task-text {
+  text-decoration: line-through;
+}
+
+.task-text {
+  width: 80%;
+  font-size: 1.4rem;
+  word-wrap: break-word;
+}
+
+.task-delete {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../trash-can.svg);
+  background-size: 1.8rem 1.8rem;
+}
+
+.task-delete:active {
+  transform: translateY(5px);
+}
