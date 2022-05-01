@@ -3,7 +3,6 @@ const submit = document.querySelector("[submit]");
 const toDoList = document.querySelector(".to-do-list");
 let li, checkBox, addedTask, taskRemoval;
 
-// adicionar tarefa
 function addTask() {
   submit.addEventListener("click", (e) => {
     e.preventDefault();
@@ -33,7 +32,6 @@ function addTask() {
   });
 }
 
-// remover tarefa
 function removeTask() {
   submit.addEventListener("click", () => {
     let taskRemoval = document.querySelectorAll(".task-delete");
@@ -46,22 +44,5 @@ function removeTask() {
   });
 }
 
-/* 
-Adicionar Features 
-- mover task marcada para o fim da lista
-- local storage
-*/
-function saveTasks() {
-  submit.addEventListener("click", () => {
-    let task = document.querySelectorAll(".list-wrapper");
-    let text = document.querySelectorAll(".task-text");
-
-    task.forEach((item) => {
-      localStorage.setItem(item, text.innerHTML);
-    });
-  });
-}
-
 window.addEventListener("load", addTask);
 window.addEventListener("load", removeTask);
-window.addEventListener("load", saveTasks);
