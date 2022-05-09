@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 100vh;
+}
+
+.content__mobile-device {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.content__mobile-device img {
+  height: 35rem;
+}
+
+.content__account-getapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.account-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 25rem;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.account-container:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-type {
+  height: 3rem;
+}
+
+.user__profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user__profile-photo img {
+  height: 6rem;
+}
+
+.user__login {
+  background-color: #0095f6;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.user__remove-acc {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.alt-user__actions {
+  color: #a0a0a0;
+  margin-top: 0.75rem;
+}
+
+.alt-user__redirect {
+  color: #0095f6;
+}
+
+.getapp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.getapp__store {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.store-download {
+  height: 3rem;
+  width: 10.2rem;
+  background-size: cover;
+}
+
+.store-download:nth-child(1) {
+  background-image: url("../img/apple-button.png");
+}
+
+.store-download:nth-child(2) {
+  background-image: url("../img/googleplay-button.png");
+}

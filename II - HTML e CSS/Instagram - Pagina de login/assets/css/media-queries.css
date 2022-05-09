@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #fefefe;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content__mobile-device {
+    display: none;
+  }
+
+  .content__account-getapp {
+    width: 100%;
+  }
+
+  .account-container {
+    width: 100%;
+    border: 1px solid transparent;
+  }
+
+  .store-download {
+    width: 7.5rem;
+    height: 2.25rem;
+  }
+}
